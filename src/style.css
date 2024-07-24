@@ -42,6 +42,99 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+/* end andy bell's reset */
+
 /* # Front-end Style Guide
 
 ## Layout
@@ -72,9 +165,68 @@ The designs were created to the following widths:
     --clr-rose-50: hsl(330, 100%, 98%);
 }
 
-.bg-image {
-    width: 500px;
-    height: 500px;
-    border: 6px solid green;
-    background-image: url('./images/image-omelette.jpeg');
+body {
+    margin: 0;
+    font-family: 'Outfit';
+    color: var(--clr-stone-900);
+}
+
+.wrapper {
+    padding: 1rem 2rem 0;
+}
+
+h1,
+h2 {
+    font-family: "Young Serif";
+    text-wrap: unset;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    letter-spacing: 2.5px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--clr-brown-800);
+}
+
+.prep {
+    padding: 1.5rem;
+    background-color: var(--clr-rose-50);
+}
+
+.prep>h2 {
+    font-family: 'Outfit';
+    font-size: 1.2rem;
+    color: var(--clr-rose-800);
+}
+
+ul {
+    /* list-style-position: outside; */
+    padding: 0 1.5rem 0.5rem;
+}
+
+ul>li {
+    padding: 0 0 0.5rem 1rem;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid var(--clr-stone-100);
+}
+
+.values {
+    font-weight: bold;
+    color: var(--clr-brown-800);
 }
