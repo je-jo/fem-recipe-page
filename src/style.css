@@ -135,25 +135,6 @@ textarea:not([rows]) {
 
 /* end andy bell's reset */
 
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 16px
-
-*/
-
 :root {
     --clr-white: hsl(0, 0%, 100%);
     --clr-stone-100: hsl(30, 54%, 90%);
@@ -169,10 +150,28 @@ body {
     margin: 0;
     font-family: 'Outfit';
     color: var(--clr-stone-900);
+    background-color: var(--clr-stone-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: min(100%, 46rem);
+    background-color: var(--clr-white);
+    border-radius: 16px;
 }
 
 .wrapper {
     padding: 1rem 2rem 0;
+}
+
+section {
+    padding-bottom: 1rem;
+}
+
+section:not(:last-child) {
+    border-bottom: 1px solid var(--clr-stone-100);
 }
 
 h1,
@@ -188,45 +187,91 @@ h1 {
 
 h2 {
     font-size: 1.7rem;
+    margin: 1em 0 0.8em;
     font-weight: 400;
     color: var(--clr-brown-800);
 }
 
-.prep {
-    padding: 1.5rem;
+.accent {
+    margin-top: 1.4rem;
+    padding: 1rem 1.5rem;
     background-color: var(--clr-rose-50);
+    border-radius: 8px;
 }
 
-.prep>h2 {
+.accent>h2 {
+    margin: 0;
     font-family: 'Outfit';
     font-size: 1.2rem;
+    font-weight: 600;
     color: var(--clr-rose-800);
 }
 
-ul {
-    /* list-style-position: outside; */
+ul, ol {
     padding: 0 1.5rem 0.5rem;
+    margin: 0;
+    margin-top: 1rem;
 }
 
-ul>li {
+ul>li,
+ol>li {
     padding: 0 0 0.5rem 1rem;
 }
 
+ol>li::marker {
+    font-weight: bold;
+    color: var(--clr-brown-800);
+}
+
 table {
+    margin-top: 1rem;
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
 }
 
 td {
-    padding: 10px;
+    padding: 0.75rem 2rem;
 }
 
 tr:not(:last-child) {
     border-bottom: 1px solid var(--clr-stone-100);
 }
 
-.values {
+.accent-table {
+    padding-left: 0.3rem;
     font-weight: bold;
     color: var(--clr-brown-800);
+}
+
+footer {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        padding-top: 8rem;
+    }
+
+    main {
+        padding: 2.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: unset;
+    }
+
+    img {
+        width: min(100%, 650px);
+        margin: 0 auto;
+        border-radius: 16px;
+    }
+
+    .accent {
+        margin-top: 2.5rem;
+    }
+    
 }
