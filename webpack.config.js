@@ -12,6 +12,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Output Management',
             template: "src/index.html",
+            favicon: "src/images/favicon-32x32.png",
         }),
     ],
     output: {
@@ -32,6 +33,10 @@ module.exports = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
+            },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
             },
         ],
     },

@@ -1,4 +1,5 @@
 import './style.css';
-// import MyImage from './my-image.png';
+// import Omelete from './images/image-omelette.jpeg'
 
 console.log("Hello world!");
+
