@@ -19,7 +19,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### The challenge
 
-- [] Match the provided design.
+- [x] Match the provided design.
 
 ### Screenshot
 
@@ -42,7 +42,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Observations
 
-I used this small project to learn Webpack asset management.
+I used this small project to learn Webpack.
 
 
 ### Useful resources

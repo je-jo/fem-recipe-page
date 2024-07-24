@@ -1,5 +1,5 @@
 import './style.css';
-// import Omelete from './images/image-omelette.jpeg'
+// import omelette from './images/image-omelette.jpeg'
 
-console.log("Hello world!");
+console.log("This is an exercise in webpack!");
 
