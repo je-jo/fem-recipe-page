@@ -28,7 +28,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- [Solution](...)
+- [Solution](https://www.frontendmentor.io/solutions/recipe-page-with-webpack-5EcoERgXr3)
 - [Live](https://je-jo.github.io/fem-recipe-page/)
 
 ## My process
